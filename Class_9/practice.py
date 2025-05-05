@@ -346,3 +346,162 @@ from typing import List
 
 
 
+
+
+
+#              *****----------------------Dataclasses----------------------*****
+
+# @dataclass
+# class Student:
+#     name: str
+#     roll_no: int
+#     percentage: float
+
+# s = Student("John", 12345, 97.72)
+# print(s)
+
+
+
+
+
+# @dataclass
+# class Product:
+#     name: str 
+#     price: int
+#     in_stock: bool = True
+    
+# p1 = Product("Mouse", 1000)
+# p2 = Product("Keyboard", 2000, False)
+
+# print(p1)
+# print(p2)
+
+
+
+
+# @dataclass
+# class User:
+#     user_name: str
+#     password: str = field(repr=False)
+
+# u = User("John", "john1234")
+# print(u)
+
+
+
+
+# @dataclass
+# class Library:
+#     name: str
+#     books: List[str] = field(default_factory=list)
+
+# l = Library("JS Library")
+# print(l)
+# l.books.append("Python Library")
+# l.books.append("AI Library")
+# print(l)
+
+
+
+
+
+# @dataclass(order=True)
+# class Employee:
+#     salary: int
+#     name: str
+
+# e1 = Employee(30000, "Alice")
+# e2 = Employee(25000, "John")
+# e3 = Employee(28000, "John")
+
+# employees = [e1, e2, e3]
+# sorted_employees = sorted(employees)
+# print(sorted_employees)
+
+
+
+
+
+
+
+
+
+
+# @dataclass(frozen=True)
+# class Config:
+#     api_key: str
+
+# cfg = Config("abc12345")
+
+
+# try:
+#     cfg.api_key = "NEW_KEY"
+# except Exception as e:
+#     print(f"Error {e}")
+
+
+
+
+
+
+
+
+
+# @dataclass 
+# class Article:
+#     name: str
+#     views: int
+
+# a1 = Article("AI News", 100)
+# a2 = replace(a1, views=150)
+
+# print(a1)
+# print(a2)
+
+
+
+
+
+
+
+
+# @dataclass 
+# class Author:
+#     name: str
+#     email: str
+
+
+# @dataclass
+# class Blog_Post:
+#     title: str
+#     content: str
+#     author: Author
+
+# auth = Author("Alice", "alice@gmail.com")
+# post = Blog_Post("My First Blog", "This is Content", auth)
+
+# print(asdict(post))
+
+
+
+
+
+
+
+
+
+
+
+
+# @dataclass(frozen=True)
+# class Point:
+#     x: int
+#     y: int
+
+# p1 = Point(1, 2)
+# p2 = Point(2, 3)
+# p3 = Point(1, 2)
+
+# points_set = {p1, p2, p3}
+# print(points_set)
+# print(f"Total Unique Points:{len(points_set)}")
