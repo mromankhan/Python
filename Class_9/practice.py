@@ -1,3 +1,6 @@
+from dataclasses import asdict, dataclass, field, replace
+from typing import List
+
 #                        ----------------------Task_1----------------------
 # class Programmer:
 #     company = "Microsoft"
@@ -243,7 +246,8 @@
 
 
 
-# p2
+#                        ----------------------Task_6----------------------
+
 
 
 # class Animal:
@@ -281,7 +285,8 @@
 
 
 
-# p3
+#                        ----------------------Task_7----------------------
+
 
 # class Employee:
 #     salary = 250
@@ -328,3 +333,16 @@
 # c1 = Complex(1, 2)
 # c2 = Complex(3, 4)
 # print(c1 + c2)
+
+
+
+
+
+
+
+
+
+
+
+
+
